@@ -1,0 +1,26 @@
+{
+  "name": "qiita-team-to-scrapbox",
+  "version": "0.1.0",
+  "repository": {
+    "url": "ssh://git@github.com/pastak/qiita-team-to-scrapbox.git",
+    "type": "git"
+  },
+  "bin": {
+    "qiita-team-to-scrapbox": "dist/index.js"
+  },
+  "files": ["dist"],
+  "author": "pastak <pasta0915@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-register": "^6.18.0",
+    "commander": "^2.9.0",
+    "md2sb": "^0.2.2"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/babel src -d dist",
+    "watch": "yarn run build -- --watch"
+  }
+}
